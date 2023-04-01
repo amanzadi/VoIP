@@ -23,5 +23,13 @@ sudo ufw enable
 sudo ufw allow 5060/udp
 
 sudo cp extensions.conf extensions.conf.backup
-sudo cp sip.conf sip.conf.backup
 sudo cp voicemail.conf voicemail.conf.backup
+sudo cp sip.conf sip.conf.backup
+
+sudo rm extensions.conf
+sudo rm voicemail.conf
+sudo rm sip.conf
+
+sudo wget https://github.com/amanzadi/VoIP/blob/main/extensions.conf 
+sudo wget https://github.com/amanzadi/VoIP/blob/main/voicemail.conf
+sudo wget https://github.com/amanzadi/VoIP/blob/main/sip.conf
