@@ -33,3 +33,7 @@ sudo rm sip.conf
 sudo wget https://github.com/amanzadi/VoIP/blob/main/extensions.conf 
 sudo wget https://github.com/amanzadi/VoIP/blob/main/voicemail.conf
 sudo wget https://github.com/amanzadi/VoIP/blob/main/sip.conf
+
+module load chan_sip.so
+reload
+sip show peers
